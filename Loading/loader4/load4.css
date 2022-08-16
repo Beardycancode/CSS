@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wave{
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0.7em 0 0 0.3em;
+    font-family:cursive;
+    -webkit-box-reflect: below -14px linear-gradient(transparent, rgba(0,0,0,0.6));
+}
+.wave span{
+    display: inline-block;
+    animation: wave 1s infinite;
+    animation-delay: calc(0.1s*var(--item));
+}
+.wave span:hover{
+    cursor: pointer;
+}
+@keyframes wave{
+    0%,40%,100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
