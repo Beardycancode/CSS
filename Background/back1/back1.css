@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+h2{
+    z-index: 22;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 500px;
+    font-size: 3vw;
+    line-height: 1em;
+    font-weight: 800;
+    color: blue;
+    border: 20px solid transparent;
+    border-image: linear-gradient(170deg,orange,white,green);
+    border-image-slice:1 ;
+    text-transform: uppercase;
+}
+i{  
+    position: absolute;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+i:nth-child(5n+1){
+    background: #fff;
+}
+i:nth-child(5n+2){
+    background: #fff;
+}
+i:nth-child(5n+3){
+    background: orange;
+    border: 5px solid orange;
+}
+i:nth-child(5n+4){
+    background: rgb(4, 255, 4);
+}
+i:nth-child(5n+5){
+    background: #fff;
+    border: 5px solid rgb(4, 255, 4);;
+}
