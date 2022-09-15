@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+h2{
+    z-index: 22;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 500px;
+    font-size: 3vw;
+    font-family: 'Monoton', cursive;
+    line-height: 1em;
+    font-weight: 1000;
+    color: black;
+    backdrop-filter: blur(12px);
+    border: 20px solid transparent;
+    background-color: gray 0.8;
+    border-radius: 9px;
+    /* border-image: linear-gradient(170deg,rgb(106, 255, 0),rgb(255, 0, 0),green); */
+    border-image-slice:1 ;
+    text-transform: uppercase;
+}
+i{  
+    /* margin-top: 30em; */
+    position: absolute;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+i:nth-child(5n+1){
+    background: rgb(29, 187, 230);
+}
+i:nth-child(5n+2){
+    background: #fff;
+}
+i:nth-child(5n+3){
+    background: rgb(11, 180, 183);
+    border: 5px solid rgb(105, 116, 198);
+}
+i:nth-child(5n+4){
+    background: rgb(131, 123, 210);
+}
+i:nth-child(5n+5){
+    background: #fff;
+    border: 5px solid rgb(4, 21, 255);;
+}
